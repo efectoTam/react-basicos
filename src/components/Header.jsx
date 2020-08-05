@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Header({titulo}) {
+function Header({title}) {
   return (
-    <h1 className="encabezado">{titulo}</h1>
+    <h1 className="encabezado">{title}</h1>
   )
 }
 

@@ -5,7 +5,7 @@ const Product = ({product, cart, addProduct, products}) => {
 
   // Agregar producto al carrito
   const selectProduct = id => {
-    const product = products.filter(product => product.id === id);
+    const product = products.filter(product => product.id === id)[0];
     addProduct([
       ...cart,
       product

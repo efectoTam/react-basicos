@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Products from './components/Products';
+import Cart from './components/Cart';
 
 function App() {
 
@@ -30,11 +31,14 @@ function App() {
         <Products
           key={product.id}
           product={product}
-          cart={cart}
           products={products}
+          cart={cart}
           addProduct={addProduct}
         />
       ))}
+      <Cart
+        cart={cart}
+      />
       <Footer
         date={date}
       />

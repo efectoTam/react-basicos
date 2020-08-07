@@ -38,6 +38,7 @@ function App() {
       ))}
       <Cart
         cart={cart}
+        addProduct={addProduct}
       />
       <Footer
         date={date}
